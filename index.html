@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="mock.css">
+    <script type="text/javascript" src="mock.js"></script>
+</head>
+
+<body>
+
+    <div id="box-container">
+
+        <div id="box-1">
+            <form onsubmit="return Validation()" method="POST">
+                <h2 style="color:  rgb(74, 77, 212);">General Information</h2>
+                <table id="table1">
+                    <tr>
+                        <td>
+                            <select id="titleselect" class="border1">
+                            <option value="0" selected disabled>Title</option>
+                            <option>Title1</option>
+                            <option>Title2</option>
+                            <option>Title3</option>
+                        </select><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="fname" class="border1 onlytext" type="text" placeholder="First Name">
+                            <span id="fnameerror" class="redtext"></span>
+                        </td>
+                        <td>
+                            <input id="lname" class="border1 onlytext" type="text" placeholder="Last Name">
+                            <span id="lnameerror" class="redtext"></span>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <select id="position" class="border1">
+                            <option value="0" selected disabled>Position</option>
+                            <option>Position1</option>
+                            <option>Position2</option>
+                            <option>Position3</option>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="company" class="border1 onlytext" type="text" placeholder="Company">
+                            <span id="companyerror" class="redtext"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="business" class="border1 onlytext" type="text" placeholder="Business Arena">
+                            <span id="businesserror" class="redtext"></span>
+                        </td>
+                        <td>
+                            <select id="employees" class="border1">
+                            <option value="0" selected disabled>Employees</option>
+                            <option>Employee1</option>
+                            <option>Employee2</option>
+                            <option>Employee3</option>
+                        </select>
+                        </td>
+                    </tr>
+
+                </table>
+
+        </div>
+        <div id="box-2">
+
+            <h2 style="color:white;">Contact Details</h2>
+            <table id="table1">
+                <tr>
+                    <td>
+                        <input class="border2" type="text" placeholder="Street + Nr">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="border2" type="text" placeholder="Additional Information">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="zip" class="border2" type="text" placeholder="Zip Code">
+                        <span id="ZIPCODE"></span>
+                    </td>
+
+                    <td>
+                        <select id="place" class="border2">
+                            <option value="0" selected disabled>Place</option>
+                            <option>Place1</option>
+                            <option>Place2</option>
+                            <option>Place3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select id="country" class="border2">
+                            <option value="0" selected disabled>Country</option>
+                            <option>Country1</option>
+                            <option>Country2</option>
+                            <option>Country3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="code" class="border2" type="text" placeholder="Code +">
+                        <span id="codephone"></span>
+
+                    </td>
+                    <td>
+                        <input id="Phone" class="border2" type="text" placeholder="Phone Number">
+                        <span id="errorphone"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="email" class="border2" type="email" placeholder="Your Email" required>
+                    </td>
+                </tr>
+
+            </table>
+
+            <h5><input id="radio" class="tc" type="radio" required>I do accept the <a href="t&c.html" required>Terms and Conditions</a><br>
+                <div class="indent">of your site.</div>
+            </h5>
+            <input id="button" type="Submit" value="Register Badge">
+            </form>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

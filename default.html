@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        {
+            function fn1() {
+                var a = document.getElementById("text1").value;
+                var b = document.getElementById("text2").value;
+                if (a == b) {
+                    alert("Both username and password are same:");
+                }
+
+            }
+
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <input type="text" id="text1" placeholder="type username">
+    <input type="password" id="text2" placeholder="type password">
+    <input onclick="fn1()" type="submit" id="submit" value="LOGIN"></body>
+
+</html>

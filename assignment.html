@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Information</title>
+    <link rel="stylesheet" href="Registration.css">
+    <script type="text/javascript" src="assignment.js"></script>
+
+
+</head>
+
+<body>
+    <h2 align="center">Employee Registration</h2>
+
+    <div id="form" align="center">
+        <form onsubmit="return noblankvalues()" action="sign_in.html" method="POST">
+
+            <table class="table">
+                <tr>
+                    <td>
+                        <label for="fname">FIRST NAME :</label>
+                    </td>
+                    <td>
+                        <p>* <input id="fname" class="inset noblanks" type="text" placeholder="enter your first name"><br></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lname">LAST NAME  :</label>
+                    </td>
+                    <td>
+                        <p>* <input id="lname" class="inset noblanks" type="text" placeholder="enter your last name"><br></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email :</label>
+                    </td>
+                    <td>
+                        <p>* <input class="inset" type="email" placeholder="enter your email name"><br></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Password:
+                    </td>
+                    <td>
+
+                        <p>* <input id="pass" class="inset" type="password"><br></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Phone :
+                    </td>
+                    <td>
+                        <p>* <input id="phone" class="inset " type="text" name="phone" placeholder="enter your phone number"></p><br></td>
+                </tr>
+                <tr>
+                    <td>
+
+                        Date of birth:
+                    </td>
+                    <td>
+                        <p>* <input class="inset" type="date" name="dob"><br></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        College :
+                    </td>
+                    <td>
+                        <p>* <input class="inset noblanks" type="text" name="college" placeholder="enter your colege name"></p><br></td>
+                </tr>
+                <tr>
+                    <td>
+                        Select your Stream:
+                    </td>
+                    <td>
+                        <input class="inset" type="radio" name="stream" value="be">BE<input type="radio" name="stream" value="btech">Btech<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Select your Branch:
+                    </td>
+                    <td>
+                        <p>* <select class="inset">
+                             <option value="0" selected disabled>Select branch</option>
+                             <option value="cse">CSE</option>
+                             <option value="it">IT</option>
+                             <option value="eee">EEE</option>
+                             <option value="ece">ECE</option>
+                             <option value="mech">Mechanical</option>
+                    </select></p><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Upload your picture :
+                    </td>
+                    <td><input type="file" id="file" onchange="return fileValidation()" name="file to upload"> <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Select your Gender:
+                    </td>
+                    <td> <input class="inset" type="radio" name="gender" value="Male">Male<input type="radio" name="gender" value="female">Female<input type="radio" name="gender" value="other">Other<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Select your Country:
+                    </td>
+                    <td>
+                        <p>* <select class="inset">
+                             <option value="0" selected disabled>Select country</option>
+                             <option value="india">India</option>
+                             <option value="US">United States</option>
+                             <option value="UK">United Kingdom</option>
+                             <option value="australia">Australia</option>
+                    </select></p><br></td>
+                </tr>
+                <tr>
+                    <td>
+                        Address :
+                    </td>
+                    <td>
+                        <textarea id="overflow" class="inset" name="address" rows="4" cols="25 " placeholder="enter your address"></textarea><br>
+                    </td>
+                </tr>
+            </table>
+            Upload your resume:<input id="file2" type="file" onchange="fileValidation2()"><br> I agree to all terms and conditions:<input type="checkbox" name="terms" value="terms"><br> NOTE : All the fields which are marked with<span style="color:red"> * </span>are
+            required fields.<br>
+            <input onclick="fn1()" type="submit" name="submit" value="REGISTER"><br>
+            <a href="sign_in.html">Already a registered employee ?</a>
+        </form>
+    </div>
+</body>
+
+</html>

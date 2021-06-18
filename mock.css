@@ -1,0 +1,107 @@
+body {
+    background-color: cornflowerblue;
+}
+
+#box-container {
+    margin: auto;
+    margin-top: 5ch;
+    height: 80%;
+    display: flex;
+    width: 70%;
+}
+
+#box-1 {
+    font-family: Arial;
+    background-color: white;
+    padding: 5ch;
+    width: 80%;
+    height: 450px;
+}
+
+#box-2 {
+    color: white;
+    font-family: Arial;
+    background-color: rgb(74, 77, 212);
+    padding: 5ch;
+    width: 80%;
+    height: 450px;
+}
+
+.border1 {
+    border-width: 0.5px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: ridge;
+    width: 175px;
+    height: 40px;
+    outline: none;
+    opacity: 0.7;
+}
+
+.border2 {
+    border-width: 0.5px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: ridge;
+    border-color: white;
+    width: 175px;
+    height: 40px;
+    background-color: rgb(74, 77, 212);
+    color: white;
+    outline: none;
+    opacity: 0.8;
+}
+
+.border1::placeholder {
+    color: black;
+}
+
+.border2::placeholder {
+    color: white;
+}
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+div.indent {
+    text-indent: 20px;
+}
+
+#button {
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20px;
+    border-width: 0px;
+    outline: none;
+}
+
+#button:hover {
+    background-color: rgb(194, 181, 181);
+}
+
+span {
+    color: red;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+    background-color: white;
+}

@@ -1,0 +1,29 @@
+div{
+	font-family: "Times New Roman";
+   margin:auto;
+   background-color: #c0c0c0;
+   border:20px solid green;
+   border-radius:20px;
+   padding:5px;
+   width:500px;
+    
+    }
+   input{
+   padding:0px;
+   }
+  
+    p{  flex-direction:row;
+        color:red;
+    }
+ .inset{
+ 
+  border-style: inset;
+ 
+ }   
+ a:hover {
+  color: green ;
+}
+
+#overflow{
+	overflow:scrol;
+}
